@@ -12,117 +12,11 @@ header {
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(84, 84, 84));
 }
 
-/* fuente tipografica de la banda */
-@font-face {
-    font-family: 'linkin';
-    src: url('../font/LinkinPark.ttf')
-}
-
-/* Titulo principal con tipografica de la banda */
-header h1 {
-    padding-top: 25px;
-    font-family: 'linkin', sans-serif;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 7px 7px 7px #000000;
-}
 
 /* Logo de la banda*/
 header img {
-    padding-top: 35px;
-    width: 6rem;
+    max-width: 20%;
     float: left;
-}
-
-/* Barra de navegación Hamburguesa */
-.top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: #FFF;
-    height: 50px;
-    padding: 1em;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu>li {
-    margin: 0 1rem;
-    overflow: hidden;
-}
-
-.menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-}
-
-.menu-button::before {
-    content: '';
-    margin-top: -8px;
-}
-
-.menu-button::after {
-    content: '';
-    margin-top: 8px;
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-}
-
-nav {
-    font-family: 'linkin', sans-serif;
-    text-align: right;
-    text-shadow: 5px 5px 7px #ffffff;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 24px;
-    font-size: 1rem;
-}
-
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
 }
 
 /* Cabecera scrooleable*/
@@ -131,29 +25,53 @@ header {
     top: 0
 }
 
-/* Titulo del cuerpo del sitio */
-h2, h3, h4 {
-    font-family: 'linkin', sans-serif;
-    text-align: left;
-    color: #000000;
-    text-shadow: 0px 2px 7px #fff;
+/* fuente tipografica de la banda */
+@font-face {
+    font-family: 'linkin';
+    src: url('../font/LinkinPark.ttf')
 }
 
-/* Background del sitio */
+/* Titulo principal con tipografica de la banda */
+header h1 {
+    padding-top: 20px;
+    font-family: 'linkin', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 7px 7px 7px #000000;
+}
+
+/* Barra de navegación */
+nav {
+    font-family: 'linkin', sans-serif;
+    text-align: right;
+    text-shadow: 5px 5px 7px #ffffff;
+    float: right;
+    color: #000000;
+}
+
+/* Background de fondo */
 body {
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* Estilos de las imagenes */
-img {
-    display: inline-flex;
-    justify-content: center;
-    width: 45%;
-    max-width: 100%;
-    padding: 1rem;
+/* Titulos del cuerpo del sitio */
+h2,
+h3,
+h4 {
+    font-family: 'linkin', sans-serif;
+    color: #000000;
+    text-shadow: 0px 2px 7px #fff;
+    text-align: center;
+}
+
+/* Titulo del footer */
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Estilos del contenido principal */
@@ -165,27 +83,54 @@ main {
     text-indent: 30px;
 }
 
+/* Estilo de parrafo */
+p {
+    line-height: 1.5;
+    background-color: #000000;
+    font-size: 18px;
+    display: inline;
+}
+
+/* Estilos de las imagenes */
+img {
+    display: inline-flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+/* Ajuste de video */
+video {
+    max-width: 80%;
+}
+
 /* Titulos para secciones */
 section div {
     margin-bottom: 20px;
 }
 
 section h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 section h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-/* Estilo de parrafo */
-p {
-    line-height: 1.5;
-    background-color: #000000;
-    font-size: 20px;
-    display: inline;
+/* Estilos del formulario*/
+form {
+    color: #fff;
+    vertical-align: top;
+    text-shadow: 2px 2px 7px #000000
+}
+
+fieldset {
+    border: 5px solid rgb(0, 0, 0);
+    font-family: 'linkin';
+    color: #000000;
+    text-shadow: 2px 2px 7px #ffffff
 }
 
 /* Estilos del pie de página */
@@ -195,8 +140,8 @@ footer {
     text-shadow: 1px 5px 7px #000000;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 footer div ul li {
@@ -214,22 +159,9 @@ footer div ul li a img:hover {
     opacity: 1;
 }
 
-/* Estilos del formulario*/
-form {
-    color: #fff;
-    vertical-align: top;
-    text-shadow: 2px 2px 7px #000000
-}
-
-fieldset {
-    font-family: 'linkin';
-    color: #000000;
-    text-shadow: 2px 2px 7px #ffffff
-}
-
 /* Clases*/
 
-.fondo-parrafo {
+.fondo__parrafo {
     line-height: 1.5;
     color: #000000;
     font-family: 'linkin', sans-serif;
@@ -243,38 +175,14 @@ fieldset {
 
 .gif {
     border: 5px solid rgb(255, 255, 255);
-    box-sizing: border-box;
     width: 90%
-}
-
-.cuerpo__index {
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.cuerpo__disc {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
 }
 
 .contacto__form {
     text-align: center;
     display: inline-block;
     font-size: 1rem;
-    background-color: black;
-}
-
-.contacto__nombre {
-    height:25px;
-    width: 500px;
-}
-
-.contacto__mensaje {
-    height: 210px;
-    width: 500px;
+    background-color: rgb(30, 28, 28);
 }
 
 .contacto__img {
@@ -283,127 +191,76 @@ fieldset {
     width: 95%
 }
 
-/* MediaQueri Responsive */
+.contacto__nombre {
+    width: auto;
+}
 
-@media (max-width: 768px) {
+.contacto__mensaje {
+    width: auto;
+}
 
-    /* Barra de navegacion hamburguesa*/
-    .menu-button-container {
-        display: flex;
-    }
+/* MediaQueri Responsive Tabet*/
 
-    .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+@media (min-width: 420px) and (orientation: landscape) {
 
-    #menu-toggle~.menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+}
 
-    #menu-toggle:checked~.menu li {
-        border: 1px solid #333;
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+/* MediaQueri Responsive Desktop*/
+@media (min-width: 1024px) and (orientation: landscape) {
 
-    .menu>li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #222;
-    }
-
-    .menu>li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
-
-    header {
-        position: sticky;
-        top: 0
-    }
-
-    /* Titulo principal con tipografica de la banda */
-    header h1 {
-        padding-top: 15px;
-        font-family: 'linkin', sans-serif;
-        text-align: center;
-        font-size: 2rem;
-        text-shadow: 7px 7px 7px #000000;
-    }
-
-    .cuerpo__index {
-        display: inline-block;
-    }
-
-    .cuerpo__disc {
-        display: inline-block
-    }
-
-    .gif {
-        max-width: 80%
-    }
-
-    .contacto__nombre {
-        width: auto;
-    }
-    
-    .contacto__mensaje {
-        width: auto;
-    }
-
+    /* Logo de la banda*/
     header img {
         width: 6rem;
     }
 
-    /* Background de fondo */
+    /* Background del sitio */
     body {
-        background-image: url(../img/mobile.jpg);
-        width: 100%;
+        background-image: url(../img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
-    main h2 {
-        font-size: 2rem;
-    }
-
-    video {
-        max-width: 80%;
-    }
-
-    /* Ajuste de las imágenes */
     img {
-        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        width: 45%;
+        max-width: 100%;
+        padding: 1rem;
     }
 
-    /* Ajuste del footer */
-    footer {
-        flex-direction: column;
-        text-align: center;
+    header h1 {
+        font-size: 3rem;
+        padding-top: 0%;
     }
 
-    form {
-        padding: 60px;
+    .gif {
+        border: 5px solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        width: 85%
+    }
+
+    .cuerpo__index {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
+
+    .cuerpo__disc {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
     }
 
     .contacto__nombre {
-        height: 50px
+        height: 25px;
+        width: 500px;
     }
-    
-    .contacto__text {
-        height:50px
+
+    .contacto__mensaje {
+        height: 210px;
+        width: 500px;
     }
+
 }

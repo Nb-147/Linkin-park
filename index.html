@@ -5,37 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" type="image/x-icon" href="./icon/favicon.ico"/>
   <title>Linkin Park</title>
 </head>
 
 <body>
 
   <header>
-    <section class="top-nav">
+    <section>
 
       <div>
-        <img src="./img/logo.jpg" alt="logo">
+        <img src="../img/logo.jpg" alt="logo">
       </div>
+
+      <nav class="navbar navbar-expand-sm">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=#opciones>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="opciones">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="./index.html"><strong>Inicio</strong></a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/discografia.html">Discografía</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/chester.html">Chester</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <div>
         <h1>LININ PARK</h1>
       </div>
-
-      <nav>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-          <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-          <li><a href="./index.html"><strong>Inicio</strong></a></li>
-          <li><a href="./pages/discografia.html">Discografía</a></li>
-          <li><a href="./pages/galeria.html">Galería</a></li>
-          <li><a href="./pages/chester.html">Chester</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
 
     </section>
   </header>
@@ -43,14 +48,19 @@
   <main>
     <!-- Historia de la banda -->
     <section>
-      <h2>Creación e Historia</h2>
+      <h2>Creacion e Historia</h2>
     </section>
     <hr>
 
     <div class="cuerpo__index">
 
+      <div>
+        <img class="gif" src="./img/lp.gif" alt="gif de la banda">
+      </div>
+
       <section>
         <article>
+          <hr>
           <div>
             <p>Linkin Park es una banda de rock alternativo originaria de Agoura Hills, California,
               Estados Unidos. La banda se formó en 1996 y logró alcanzar un gran éxito y reconocimiento a nivel mundial
@@ -95,13 +105,8 @@
         </article>
       </section>
 
-      <div>
-        <img class="gif" src="./img/lp.gif" alt="gif de la banda">
-      </div>
-
     </div>
     <hr>
-
   </main>
 
   <footer>
@@ -123,7 +128,9 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
