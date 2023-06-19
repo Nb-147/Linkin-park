@@ -9,13 +9,13 @@ header {
     background-color: #000000;
     color: #ffffff;
     padding: 10px;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(140, 140, 140));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
 }
 
 /* Logo de la banda*/
 header img {
     max-width: 20%;
-    float: left;
+    float: right;
 }
 
 /* Cabecera scrooleable*/
@@ -35,16 +35,16 @@ header h1 {
     padding-top: 20px;
     font-family: 'linkin', sans-serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-shadow: 7px 7px 7px #000000;
 }
 
 /* Barra de navegación */
 nav {
     font-family: 'linkin', sans-serif;
-    text-align: right;
-    text-shadow: 5px 5px 7px #ffffff;
-    float: right;
+    text-align: center;
+    text-shadow: 1px 1px 7px #ffffff;
+    float: left;
 }
 
 /* Background de fondo */
@@ -57,7 +57,8 @@ body {
 
 /* Titulos del cuerpo del sitio */
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'linkin', sans-serif;
     color: #000000;
     text-shadow: 0px 2px 7px #fff;
@@ -158,11 +159,11 @@ footer div ul li a img:hover {
 
 /* Clases*/
 
-.fondo__parrafo {
+.disc__lista {
     line-height: 1.5;
     color: #000000;
     font-family: 'linkin', sans-serif;
-    text-shadow: 2px 2px 5px #ffffff;
+    text-shadow: 1px 1px 7px #ffffff;
     font-size: 18px;
 }
 
@@ -199,7 +200,6 @@ footer div ul li a img:hover {
 .icon__footer {
     max-width: 20%;
 }
-
 
 /* MediaQueri Responsive Tabet*/
 @media (min-width: 420px) and (orientation: landscape) {}
@@ -266,4 +266,12 @@ footer div ul li a img:hover {
         max-width: 5%;
     }
 
+    /* Logo de la banda*/
+header img {
+    float: left;
+}
+
+nav {
+    float: right;
+}
 }
