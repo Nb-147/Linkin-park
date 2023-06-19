@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico" />
     <title>Linkin Park</title>
 </head>
 
@@ -33,7 +33,8 @@
                         <li class="nav-item"><a class="nav-link" href="./discografia.html">Discografía</a></li>
                         <li class="nav-item"><a class="nav-link" href="./galeria.html">Galería</a></li>
                         <li class="nav-item"><a class="nav-link" href="./chester.html">Chester</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contacto.html"><strong>Contacto</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html"><strong>Contacto</strong></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -65,48 +66,50 @@
                 <img class="contacto__img" src="../img/linkinpark3.jpg" alt="imagen de la banda">
             </div>
 
-            <form action="">
+            <div class="centrar">
+                <form action="">
 
-                <fieldset class="contacto__form">
-                    <div>
-                        <legend>
-                            <h2>Contacto</h2>
-                        </legend>
-                        <hr>
-                    </div>
+                    <fieldset class="contacto__form">
+                        <div>
+                            <legend>
+                                <h2>Contacto</h2>
+                            </legend>
+                            <hr>
+                        </div>
 
-                    <div>
-                        <label for="nombre">Nombre y Apellido:</label><br>
-                        <input class="contacto__nombre" type="email" id="nombre" placeholder="Nombre">
-                    </div>
+                        <div>
+                            <label for="nombre">Nombre y Apellido:</label><br>
+                            <input class="contacto__nombre" type="email" id="nombre" placeholder="Nombre">
+                        </div>
 
-                    <div>
-                        <label for="mensaje">Correo electronico</label><br>
-                        <input class="contacto__nombre" type="email" id="email" placeholder="ejemplo@gmail.com">
-                    </div>
+                        <div>
+                            <label for="mensaje">Correo electronico</label><br>
+                            <input class="contacto__nombre" type="email" id="email" placeholder="ejemplo@gmail.com">
+                        </div>
 
-                    <div>
-                        <label for="mensaje">Ingrese su mensaje</label><br>
-                        <textarea class="contacto__mensaje" name="mensaje" id="mensaje"
-                            placeholder="Mensaje"></textarea>
-                    </div>
+                        <div>
+                            <label for="mensaje">Ingrese su mensaje</label><br>
+                            <textarea class="contacto__mensaje" name="mensaje" id="mensaje"
+                                placeholder="Mensaje"></textarea>
+                        </div>
 
-                    <div>
-                        <label for="asunto">Asunto del mensaje</label><br>
-                        <select name="" id="asunto">
-                            <option value="consulta">Consulta</option>
-                            <option value="Sugerencias">Sugerencias</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div>
+                        <div>
+                            <label for="asunto">Asunto del mensaje</label><br>
+                            <select name="" id="asunto">
+                                <option value="consulta">Consulta</option>
+                                <option value="Sugerencias">Sugerencias</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
 
-                    <div>
-                        <input type="submit">
-                        <input type="reset">
-                    </div>
-                </fieldset>
+                        <div>
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                    </fieldset>
 
-            </form>
+                </form>
+            </div>
         </div>
 
     </main>
@@ -118,14 +121,14 @@
 
         <div>
             <ul>
-                <li><a href="https://www.instagram.com/linkinpark/" target="_blank"><img src="../icon/instagram.png"
-                            width="70" height="70" alt="Instagram"></a></li>
-                <li><a href="https://twitter.com/linkinpark" target="_blank"><img src="../icon/twitter.png" width="70"
-                            height="70" alt="Twitter"></li></a>
-                <li><a href="https://es-la.facebook.com/linkinpark/" target="_blank"><img src="../icon/facebook.png"
-                            width="70" height="70" alt="facebook"></a></li>
-                <li><a href="https://www.youtube.com/linkinpark" target="_blank"><img src="../icon/youtube.png"
-                            width="70" height="70" alt="youtube"></a></li>
+                <li class="icon__footer"><a href="https://www.instagram.com/linkinpark/" target="_blank"><img
+                            src="../icon/instagram.png" alt="Instagram"></a></li>
+                <li class="icon__footer"><a href="https://twitter.com/linkinpark" target="_blank"><img
+                            src="../icon/twitter.png" alt="Twitter"></li></a>
+                <li class="icon__footer"><a href="https://es-la.facebook.com/linkinpark/" target="_blank"><img
+                            src="../icon/facebook.png" alt="facebook"></a></li>
+                <li class="icon__footer"><a href="https://www.youtube.com/linkinpark" target="_blank"><img
+                            src="../icon/youtube.png" alt="youtube"></a></li>
             </ul>
         </div>
     </footer>

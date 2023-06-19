@@ -9,9 +9,8 @@ header {
     background-color: #000000;
     color: #ffffff;
     padding: 10px;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(84, 84, 84));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(140, 140, 140));
 }
-
 
 /* Logo de la banda*/
 header img {
@@ -46,7 +45,6 @@ nav {
     text-align: right;
     text-shadow: 5px 5px 7px #ffffff;
     float: right;
-    color: #000000;
 }
 
 /* Background de fondo */
@@ -59,8 +57,7 @@ body {
 
 /* Titulos del cuerpo del sitio */
 h2,
-h3,
-h4 {
+h3 {
     font-family: 'linkin', sans-serif;
     color: #000000;
     text-shadow: 0px 2px 7px #fff;
@@ -188,7 +185,7 @@ footer div ul li a img:hover {
 .contacto__img {
     border: 2px solid rgb(0, 0, 0);
     box-sizing: border-box;
-    width: 95%
+    width: 90%
 }
 
 .contacto__nombre {
@@ -199,11 +196,13 @@ footer div ul li a img:hover {
     width: auto;
 }
 
-/* MediaQueri Responsive Tabet*/
-
-@media (min-width: 420px) and (orientation: landscape) {
-
+.icon__footer {
+    max-width: 20%;
 }
+
+
+/* MediaQueri Responsive Tabet*/
+@media (min-width: 420px) and (orientation: landscape) {}
 
 /* MediaQueri Responsive Desktop*/
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -261,6 +260,10 @@ footer div ul li a img:hover {
     .contacto__mensaje {
         height: 210px;
         width: 500px;
+    }
+
+    .icon__footer {
+        max-width: 5%;
     }
 
 }
