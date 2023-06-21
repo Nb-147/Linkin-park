@@ -190,11 +190,12 @@ footer div ul li a img:hover {
 }
 
 .contacto__nombre {
-    width: auto;
+    width: 300px;
 }
 
 .contacto__mensaje {
-    width: auto;
+    width: 300px;
+    height: 200px;
 }
 
 .icon__footer {
