@@ -268,11 +268,11 @@ footer div ul li a img:hover {
     }
 
     /* Logo de la banda*/
-header img {
-    float: left;
-}
+    header img {
+        float: left;
+    }
 
-nav {
-    float: right;
-}
+    nav {
+        float: right;
+    }
 }
