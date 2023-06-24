@@ -165,10 +165,6 @@ footer div ul li a img:hover {
     background-size: cover;
 }
 
-.navbar-toggler {
-    border: none;
-}
-
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
