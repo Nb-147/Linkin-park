@@ -6,10 +6,9 @@
 
 /* Encabezado del sitio*/
 header {
-    background-color: #000000;
     color: #ffffff;
     padding: 10px;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
+    background: linear-gradient(to right, rgb(115, 115, 115), rgb(0, 0, 0));
 }
 
 /* Logo de la banda*/
@@ -159,6 +158,22 @@ footer div ul li a img:hover {
 
 /* Clases*/
 
+/* Fondo para menu de hamburguesa*/
+.offcanvas {
+    background-image: url(../img/navbar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .disc__lista {
     line-height: 1.5;
     color: #000000;
@@ -213,6 +228,10 @@ footer div ul li a img:hover {
         width: 6rem;
     }
 
+    header {
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
+    }
+
     /* Background del sitio */
     body {
         background-image: url(../img/background.jpg);
@@ -232,6 +251,10 @@ footer div ul li a img:hover {
     header h1 {
         font-size: 3rem;
         padding-top: 0%;
+    }
+
+    .offcanvas {
+        background-image: none;
     }
 
     .gif {
