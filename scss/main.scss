@@ -1,5 +1,13 @@
-@import "./base"
+@import "./pages/base";
 
-@import "./components/card"
+@import "./components/header";
 
-@import "./pages/contacto"
+@import "./components/nav";
+
+@import "./components/footer";
+
+@import "./pages/index";
+
+@import "./pages/contacto";
+
+@import "./pages/discografia";

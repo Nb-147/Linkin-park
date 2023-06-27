@@ -1,297 +1,250 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Encabezado del sitio*/
-header {
-    color: #ffffff;
-    padding: 10px;
-    background: linear-gradient(to right, rgb(115, 115, 115), rgb(0, 0, 0));
-}
-
-/* Logo de la banda*/
-header img {
-    max-width: 20%;
-    float: right;
-}
-
-/* Cabecera scrooleable*/
-header {
-    position: sticky;
-    top: 0
-}
-
-/* fuente tipografica de la banda */
 @font-face {
-    font-family: 'linkin';
-    src: url('../font/LinkinPark.ttf')
+  font-family: "linkin";
+  src: url("../font/LinkinPark.ttf");
 }
-
-/* Titulo principal con tipografica de la banda */
-header h1 {
-    padding-top: 20px;
-    font-family: 'linkin', sans-serif;
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: 7px 7px 7px #000000;
-}
-
-/* Barra de navegación */
-nav {
-    font-family: 'linkin', sans-serif;
-    text-align: center;
-    text-shadow: 1px 1px 7px #ffffff;
-    float: left;
-}
-
-/* Background de fondo */
 body {
-    background-image: url(../img/mobile.jpg);
+  background-image: url(../img/mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body h2,
+body h3,
+body h4 {
+  font-family: "linkin", sans-serif;
+  color: #000000;
+  text-shadow: 0px 2px 7px #fff;
+  text-align: center;
+}
+body hr {
+  visibility: collapse;
+}
+
+main {
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-indent: 30px;
+}
+main img {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 1rem;
+}
+main video {
+  max-width: 80%;
+}
+main p {
+  line-height: 1.5;
+  background-color: #000000;
+  font-size: 1.1rem;
+  display: inline;
+}
+
+section div {
+  margin-bottom: 20px;
+}
+section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+section h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  body {
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-/* Titulos del cuerpo del sitio */
-h2,
-h3,
-h4 {
-    font-family: 'linkin', sans-serif;
-    color: #000000;
-    text-shadow: 0px 2px 7px #fff;
-    text-align: center;
-}
-
-/* Titulo del footer */
-h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Estilos del contenido principal */
-main {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
-    color: #ffffff;
-    font-weight: bold;
-    text-indent: 30px;
-}
-
-/* Estilo de parrafo */
-p {
-    line-height: 1.5;
-    background-color: #000000;
-    font-size: 18px;
-    display: inline;
-}
-
-/* Estilos de las imagenes */
-img {
+  }
+  img {
     display: inline-flex;
     justify-content: center;
+    width: 45%;
     max-width: 100%;
     padding: 1rem;
-}
-
-/* Ajuste de video */
-video {
-    max-width: 80%;
-}
-
-/* Titulos para secciones */
-section div {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-section h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-/* Estilos del formulario*/
-form {
-    color: #fff;
-    vertical-align: top;
-    text-shadow: 2px 2px 7px #000000
-}
-
-fieldset {
-    border: 5px solid rgb(0, 0, 0);
-    font-family: 'linkin';
-    color: #000000;
-    text-shadow: 2px 2px 7px #ffffff
-}
-
-/* Estilos del pie de página */
-footer {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(84, 84, 84));
-    color: #ffffff;
-    text-shadow: 1px 5px 7px #000000;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  }
+  header h1 {
+    font-size: 3rem;
+    padding-top: 0%;
+  }
+  .centrar {
     text-align: center;
+  }
+  .cuerpo {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+  }
+}
+header {
+  color: #ffffff;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(115, 115, 115), rgb(0, 0, 0));
+}
+header h1 {
+  padding-top: 20px;
+  font-family: "linkin", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 7px 7px 7px #000000;
+}
+header img {
+  max-width: 20%;
+  float: right;
+}
+header {
+  position: sticky;
+  top: 0;
 }
 
-footer div ul li {
-    display: inline-block;
-    margin-right: 10px;
+@media (min-width: 1024px) and (orientation: landscape) {
+  header {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
+  }
+  header h1 {
+    font-size: 3rem;
+    padding-top: 0%;
+  }
+  header img {
+    float: left;
+    width: 6rem;
+  }
+}
+nav {
+  font-family: "linkin", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 7px #ffffff;
+  float: left;
 }
 
-footer div ul li a img {
-    width: auto;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-footer div ul li a img:hover {
-    opacity: 1;
-}
-
-/* Clases*/
-
-/* Fondo para menu de hamburguesa*/
 .offcanvas {
-    background-image: url(../img/navbar1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/navbar1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.disc__lista {
-    line-height: 1.5;
-    color: #000000;
-    font-family: 'linkin', sans-serif;
-    text-shadow: 1px 1px 7px #ffffff;
-    font-size: 18px;
+.navbar-toggler-icon {
+  border: 2px solid rgba(0, 0, 0, 0.438);
 }
 
-.centrar {
-    text-align: center;
+@media (min-width: 1024px) and (orientation: landscape) {
+  nav {
+    float: right;
+  }
+  .offcanvas {
+    background-image: none;
+  }
 }
-
-.gif {
-    border: 5px solid rgb(255, 255, 255);
-    width: 90%
+footer {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(84, 84, 84));
+  text-shadow: 1px 5px 7px #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
-.contacto__form {
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem;
-    background-color: rgb(30, 28, 28);
+footer div ul li {
+  display: inline-block;
+  margin-right: 40px;
 }
-
-.contacto__img {
-    border: 2px solid rgb(0, 0, 0);
-    box-sizing: border-box;
-    width: 90%
+footer div ul li a img {
+  width: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
-
-.contacto__nombre {
-    width: 300px;
-}
-
-.contacto__mensaje {
-    width: 300px;
-    height: 200px;
+footer div ul li a img:hover {
+  opacity: 1;
 }
 
 .icon__footer {
-    max-width: 20%;
+  max-width: 12%;
 }
 
-/* MediaQueri Responsive Tabet*/
-@media (min-width: 420px) and (orientation: landscape) {}
-
-/* MediaQueri Responsive Desktop*/
 @media (min-width: 1024px) and (orientation: landscape) {
-
-    /* Logo de la banda*/
-    header img {
-        width: 6rem;
-    }
-
-    header {
-        background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
-    }
-
-    /* Background del sitio */
-    body {
-        background-image: url(../img/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    img {
-        display: inline-flex;
-        justify-content: center;
-        width: 45%;
-        max-width: 100%;
-        padding: 1rem;
-    }
-
-    header h1 {
-        font-size: 3rem;
-        padding-top: 0%;
-    }
-
-    .offcanvas {
-        background-image: none;
-    }
-
-    .gif {
-        border: 5px solid rgb(255, 255, 255);
-        box-sizing: border-box;
-        width: 85%
-    }
-
-    .cuerpo__index {
-        padding-top: 50px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 10px;
-    }
-
-    .cuerpo__disc {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    .contacto__nombre {
-        height: 25px;
-        width: 500px;
-    }
-
-    .contacto__mensaje {
-        height: 210px;
-        width: 500px;
-    }
-
-    .icon__footer {
-        max-width: 5%;
-    }
-
-    /* Logo de la banda*/
-    header img {
-        float: left;
-    }
-
-    nav {
-        float: right;
-    }
+  .icon__footer {
+    max-width: 5%;
+  }
 }
+.gif {
+  border: 5px solid rgb(255, 255, 255);
+  width: 90%;
+}
+
+fieldset {
+  border: 5px solid rgb(0, 0, 0);
+  font-family: "linkin";
+  color: #000000;
+  text-shadow: 2px 2px 7px #ffffff;
+}
+
+.contacto__form {
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgb(33, 31, 31);
+}
+
+.contacto__img {
+  border: 2px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.contacto__nombre {
+  width: 90%;
+}
+
+.contacto__mensaje {
+  width: 90%;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .contacto__nombre {
+    max-width: 90%;
+  }
+  .contacto__mensaje {
+    max-width: 90%;
+    height: 200px;
+  }
+}
+.disc__lista {
+  line-height: 1.5;
+  color: #000000;
+  font-family: "linkin", sans-serif;
+  text-shadow: 1px 1px 7px #ffffff;
+  font-size: 1.4rem;
+  display: inline-block;
+  background-image: url(/img/navbar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .cuerpo__disc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .disc__lista {
+    background-image: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

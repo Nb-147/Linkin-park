@@ -1,0 +1,39 @@
+fieldset {
+    border: 5px solid rgb(0, 0, 0);
+    font-family: 'linkin';
+    color: #000000;
+    text-shadow: 2px 2px 7px #ffffff
+}
+
+.contacto__form {
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgb(33, 31, 31);
+}
+
+.contacto__img {
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    width: 90%
+}
+
+.contacto__nombre {
+    width: 90%;
+}
+
+.contacto__mensaje {
+    width: 90%
+}
+
+
+@media (min-width: 1024px) and (orientation: landscape) {
+
+    .contacto__nombre {
+        max-width: 90%;
+    }
+
+    .contacto__mensaje {
+        max-width: 90%;
+        height: 200px;
+    }
+}

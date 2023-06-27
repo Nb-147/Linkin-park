@@ -1,0 +1,39 @@
+header {
+    color: #ffffff;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(115, 115, 115), rgb(0, 0, 0));
+
+    & h1 {
+        padding-top: 20px;
+        font-family: 'linkin', sans-serif;
+        text-align: center;
+        font-size: 2.5rem;
+        text-shadow: 7px 7px 7px #000000;
+    }
+
+    & img {
+        max-width: 20%;
+        float: right;
+    }
+
+    & {
+        position: sticky;
+        top: 0
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    header {
+            background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
+
+            & h1 {
+                font-size: 3rem;
+                padding-top: 0%;
+            }
+
+        & img {
+            float: left;
+            width: 6rem;
+        }
+    }
+}
