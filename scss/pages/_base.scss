@@ -56,16 +56,18 @@ main {
 }
 
 section {
-    & div{
+    & div {
         margin-bottom: 20px;
     }
+
     & h2 {
         font-size: 40px;
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     }
+
     & h3 {
         font-size: 30px;
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -91,14 +93,14 @@ section {
         padding-top: 0%;
     }
 
-.centrar {
-    text-align: center;
-}
+    .centrar {
+        text-align: center;
+    }
 
-.cuerpo {
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 10px;
-}
+    .cuerpo {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
 }

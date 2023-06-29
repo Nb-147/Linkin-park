@@ -1,24 +1,22 @@
 nav {
     font-family: 'linkin', sans-serif;
     text-align: center;
-    text-shadow: 1px 1px 7px #ffffff;
+    text-shadow: 1px 1px 1px #ffffff;
     float: left;
 }
 
 .offcanvas {
-    background-image: url(../img/navbar1.jpg);
+    background-image: url(../img/navbar2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
+.navbar-toggler {
+    border: none !important;
 
-
-.navbar-toggler-icon {
-    border: 2px solid rgba(0, 0, 0, 0.438);
+    &:focus {
+        box-shadow: none !important;
+    }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {

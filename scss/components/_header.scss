@@ -1,7 +1,7 @@
 header {
     color: #ffffff;
     padding: 10px;
-    background: linear-gradient(to right, rgb(115, 115, 115), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(162, 162, 162), rgb(0, 0, 0));
 
     & h1 {
         padding-top: 20px;
@@ -24,7 +24,7 @@ header {
 
 @media (min-width: 1024px) and (orientation: landscape) {
     header {
-            background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
+            background: linear-gradient(to right, rgb(0, 0, 0), rgb(162, 162, 162));
 
             & h1 {
                 font-size: 3rem;

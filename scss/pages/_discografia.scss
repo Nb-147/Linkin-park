@@ -5,10 +5,6 @@
     text-shadow: 1px 1px 7px #ffffff;
     font-size: 1.4rem;
     display: inline-block;
-    background-image: url(/img/navbar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -16,9 +12,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-}
-
-.disc__lista {
-    background-image:none
 }
 }

@@ -92,7 +92,7 @@ section h3 {
 header {
   color: #ffffff;
   padding: 10px;
-  background: linear-gradient(to right, rgb(115, 115, 115), rgb(0, 0, 0));
+  background: linear-gradient(to right, rgb(162, 162, 162), rgb(0, 0, 0));
 }
 header h1 {
   padding-top: 20px;
@@ -112,7 +112,7 @@ header {
 
 @media (min-width: 1024px) and (orientation: landscape) {
   header {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(115, 115, 115));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(162, 162, 162));
   }
   header h1 {
     font-size: 3rem;
@@ -126,23 +126,21 @@ header {
 nav {
   font-family: "linkin", sans-serif;
   text-align: center;
-  text-shadow: 1px 1px 7px #ffffff;
+  text-shadow: 1px 1px 1px #ffffff;
   float: left;
 }
 
 .offcanvas {
-  background-image: url(../img/navbar1.jpg);
+  background-image: url(../img/navbar2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
+.navbar-toggler {
+  border: none !important;
 }
-
-.navbar-toggler-icon {
-  border: 2px solid rgba(0, 0, 0, 0.438);
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -154,7 +152,7 @@ nav {
   }
 }
 footer {
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(84, 84, 84));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(162, 162, 162));
   text-shadow: 1px 5px 7px #000000;
   padding: 10px;
   display: flex;
@@ -180,7 +178,7 @@ footer div ul li a img:hover {
 
 @media (min-width: 1024px) and (orientation: landscape) {
   .icon__footer {
-    max-width: 5%;
+    max-width: 4%;
   }
 }
 .gif {
@@ -231,9 +229,6 @@ fieldset {
   text-shadow: 1px 1px 7px #ffffff;
   font-size: 1.4rem;
   display: inline-block;
-  background-image: url(/img/navbar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -241,9 +236,6 @@ fieldset {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-  }
-  .disc__lista {
-    background-image: none;
   }
 }
 
