@@ -23,8 +23,11 @@ nav {
     nav {
         float: right;
     }
+}
 
-    .offcanvas {
-        background-image: none;
-    }
+
+@media (min-width: 1200px) and (orientation: landscape) {
+.offcanvas {
+    background-image: none;
+}
 }
