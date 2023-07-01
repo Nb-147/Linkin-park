@@ -8,12 +8,6 @@
   font-family: "linkin";
   src: url("../font/LinkinPark.ttf");
 }
-body {
-  background-image: url(../img/mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 body h2,
 body h3,
 body h4 {
@@ -62,12 +56,6 @@ section h3 {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-  body {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
   img {
     display: inline-flex;
     justify-content: center;
@@ -175,12 +163,12 @@ footer div ul li a img:hover {
 }
 
 .icon__footer {
-  max-width: 12%;
+  max-width: 2rem;
 }
 
-@media (min-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
   .icon__footer {
-    max-width: 4%;
+    max-width: 4rem;
   }
 }
 .gif {
@@ -188,6 +176,21 @@ footer div ul li a img:hover {
   width: 90%;
 }
 
+body {
+  background-image: url(../img/mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
 fieldset {
   border: 5px solid rgb(0, 0, 0);
   font-family: "linkin";
@@ -215,6 +218,13 @@ fieldset {
   width: 90%;
 }
 
+.contacto__bg {
+  background-image: url(/img/contacto-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
   .contacto__nombre {
     max-width: 90%;
@@ -222,6 +232,12 @@ fieldset {
   .contacto__mensaje {
     max-width: 90%;
     height: 200px;
+  }
+  .contacto__bg {
+    background-image: url(/img/contacto-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 .disc__lista {
@@ -233,11 +249,41 @@ fieldset {
   display: inline-block;
 }
 
+.discografia__bg {
+  background-image: url(/img/discografia-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
   .cuerpo__disc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+}
+.chester__bg {
+  background-image: url(/img/background-chester.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .chester__bg {
+    background-image: url(/img/chester-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+  .galeria__bg {
+    background-image: url(/img/galeria-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 

@@ -25,6 +25,13 @@ fieldset {
     width: 90%
 }
 
+.contacto__bg {
+    background-image: url(/img/contacto-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
     .contacto__nombre {
         max-width: 90%;
@@ -33,5 +40,12 @@ fieldset {
     .contacto__mensaje {
         max-width: 90%;
         height: 200px;
+    }
+
+    .contacto__bg {
+        background-image: url(/img/contacto-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }

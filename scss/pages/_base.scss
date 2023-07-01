@@ -10,10 +10,6 @@
 }
 
 body {
-    background-image: url(../img/mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 
     & h2,
     h3,
@@ -72,13 +68,6 @@ section {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-
-    body {
-        background-image: url(../img/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
 
     img {
         display: inline-flex;
