@@ -1,5 +1,5 @@
 .chester__bg {
-    background-image: url(/img/background-chester.jpg);
+    background-image: url(../img/background-chester.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -8,7 +8,7 @@
 @media (min-width: 1024px) and (orientation: landscape) {
 
     .chester__bg {
-        background-image: url(/img/chester-bg.jpeg);
+        background-image: url(../img/chester-bg.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

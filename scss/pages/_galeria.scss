@@ -1,7 +1,14 @@
+body {
+    background-image: url(../img/mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
 
     .galeria__bg {
-        background-image: url(/img/galeria-bg.jpg);
+        background-image: url(../img/galeria-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

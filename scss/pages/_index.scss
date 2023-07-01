@@ -3,7 +3,7 @@
     width: 90%
 }
 
-body {
+.index__bg {
     background-image: url(../img/mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,11 +13,10 @@ body {
 
 @media (min-width: 1024px) and (orientation: landscape) {
 
-    body {
+    .index__bg {
         background-image: url(../img/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
-
 }

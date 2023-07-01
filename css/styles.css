@@ -176,7 +176,7 @@ footer div ul li a img:hover {
   width: 90%;
 }
 
-body {
+.index__bg {
   background-image: url(../img/mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,7 +184,7 @@ body {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-  body {
+  .index__bg {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,7 +219,7 @@ fieldset {
 }
 
 .contacto__bg {
-  background-image: url(/img/contacto-mob.jpg);
+  background-image: url(../img/contacto-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -234,7 +234,7 @@ fieldset {
     height: 200px;
   }
   .contacto__bg {
-    background-image: url(/img/contacto-bg.jpg);
+    background-image: url(../img/contacto-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -250,7 +250,7 @@ fieldset {
 }
 
 .discografia__bg {
-  background-image: url(/img/discografia-bg.jpg);
+  background-image: url(../img/discografia-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -264,7 +264,7 @@ fieldset {
   }
 }
 .chester__bg {
-  background-image: url(/img/background-chester.jpg);
+  background-image: url(../img/background-chester.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -272,15 +272,22 @@ fieldset {
 
 @media (min-width: 1024px) and (orientation: landscape) {
   .chester__bg {
-    background-image: url(/img/chester-bg.jpeg);
+    background-image: url(../img/chester-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
 }
+body {
+  background-image: url(../img/mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
   .galeria__bg {
-    background-image: url(/img/galeria-bg.jpg);
+    background-image: url(../img/galeria-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
