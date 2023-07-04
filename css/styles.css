@@ -26,6 +26,21 @@ main {
   color: #ffffff;
   font-weight: bold;
   text-indent: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 1s ease-in-out forwards;
+  position: relative;
+  z-index: 1;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 main img {
   display: inline-flex;
@@ -81,6 +96,8 @@ header {
   color: #ffffff;
   padding: 10px;
   background: linear-gradient(to right, rgb(162, 162, 162), rgb(0, 0, 0));
+  position: relative;
+  z-index: 2;
 }
 header h1 {
   padding-top: 20px;
@@ -172,7 +189,7 @@ footer div ul li a img:hover {
   }
 }
 .gif {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid #ffffff;
   width: 90%;
 }
 
@@ -192,8 +209,8 @@ footer div ul li a img:hover {
   }
 }
 fieldset {
-  border: 5px solid rgb(0, 0, 0);
-  font-family: "linkin";
+  border: 5px solid #000000;
+  font-family: "linkin", sans-serif;
   color: #000000;
   text-shadow: 2px 2px 7px #ffffff;
 }

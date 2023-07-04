@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: 'linkin';
+    font-family: "linkin";
     src: url('../font/LinkinPark.ttf')
 }
 
@@ -14,23 +14,41 @@ body {
     & h2,
     h3,
     h4 {
-        font-family: 'linkin', sans-serif;
+        font-family: $fuente-principal;
         color: #000000;
-        text-shadow: 0px 2px 7px #fff;
+        text-shadow: 0px 2px 7px $sombra-texto;
         text-align: center;
     }
 
     & hr {
         visibility: collapse;
     }
+
 }
 
 main {
     font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
+    padding: $espaciado;
     color: #ffffff;
     font-weight: bold;
     text-indent: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1s ease-in-out forwards;
+    position: relative;
+    z-index: 1;
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     & img {
         display: inline-flex;
@@ -45,7 +63,7 @@ main {
 
     & p {
         line-height: 1.5;
-        background-color: #000000;
+        background-color: $fondo-parrafo;
         font-size: 1.1rem;
         display: inline;
     }
@@ -53,7 +71,7 @@ main {
 
 section {
     & div {
-        margin-bottom: 20px;
+        margin-bottom: $espaciado;
     }
 
     & h2 {

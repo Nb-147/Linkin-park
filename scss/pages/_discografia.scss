@@ -1,7 +1,7 @@
 .disc__lista {
     line-height: 1.5;
     color: #000000;
-    font-family: 'linkin', sans-serif;
+    font-family: $fuente-principal;
     text-shadow: 1px 1px 7px #ffffff;
     font-size: 1.4rem;
     display: inline-block;
@@ -14,10 +14,10 @@
     background-attachment: fixed;
 }
 
-@media (min-width: 1024px) and (orientation: landscape) {
-    .cuerpo__disc {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+    @media (min-width: 1024px) and (orientation: landscape) {
+        .cuerpo__disc {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
     }
-}
