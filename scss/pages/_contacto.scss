@@ -9,6 +9,23 @@ fieldset {
     text-align: center;
     font-size: 1rem;
     background-color: rgb(33, 31, 31);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: aparecer-formulario 5s forwards;
+}
+
+
+@keyframes aparecer-formulario {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .contacto__img {

@@ -1,5 +1,5 @@
 .gif {
-    border: 5px solid $color-secundario;
+    border: 3px solid $color-secundario;
     width: 90%
 }
 
@@ -8,6 +8,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.gif__animar {
+    animation: animar-gif 4s infinite;
+}
+
+@keyframes animar-gif {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9); 
+    }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
