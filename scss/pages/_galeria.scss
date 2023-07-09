@@ -12,6 +12,48 @@ body {
     background-attachment: fixed;
 }
 
+.band-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.band-card {
+    width: 200px;
+    text-align: center;
+    border-style: double;
+    background-color: $color-primario;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-15px);
+    }
+
+
+    & img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    & h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    & p {
+        font-size: 16px;
+        color: $color-secundario;
+        text-indent: 0%;
+    }
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
 
     .galeria__bg {
