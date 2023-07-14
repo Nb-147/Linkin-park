@@ -12,13 +12,13 @@ body {
     background-attachment: fixed;
 }
 
-.band-container {
+.band__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.band-card {
+.band__card {
     width: 200px;
     text-align: center;
     border-style: double;

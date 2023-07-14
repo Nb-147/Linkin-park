@@ -338,13 +338,13 @@ body {
   background-attachment: fixed;
 }
 
-.band-container {
+.band__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.band-card {
+.band__card {
   width: 200px;
   text-align: center;
   border-style: double;
@@ -356,20 +356,20 @@ body {
   align-items: center;
   transition: transform 0.3s ease;
 }
-.band-card:hover {
+.band__card:hover {
   transform: translateY(-15px);
 }
-.band-card img {
+.band__card img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
-.band-card h3 {
+.band__card h3 {
   font-size: 22px;
   margin-bottom: 15px;
 }
-.band-card p {
+.band__card p {
   font-size: 16px;
   color: #ffffff;
   text-indent: 0%;
