@@ -43,7 +43,7 @@ Su objetivo es proporcionar a los fanáticos y seguidores de la banda un lugar d
 
 ## Licencia
 
-Este proyecto se distribuye sin licencia y es con fines estudiantiles. 
+Este proyecto se distribuye sin licencia y con fines estudiantiles. 
 
 ## Recursos adicionales
 
